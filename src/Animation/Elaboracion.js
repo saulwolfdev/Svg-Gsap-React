@@ -21,14 +21,16 @@ class Elaboracion extends Component {
 		this.Planta = null;
 	}
 	componentDidMount() {
-	TweenMax.from(this.Bandeja, 1, {delay: 0.6,width: 0, ease: Expo.easeInOut});
-	TweenMax.to(this.Planta, 30,{repeat:2,repeatDelay:5,left:1300,rotation: 360, yoyo:true,autoAlpha: 0.8, ease:Bounce.easeOut,transformOrigin:"50% 50%"});
+	TweenMax.from(this.Bandeja, 1, {delay: 0.6, ease: Expo.easeInOut});
+	// TweenMax.from(this.Planta, 30,{repeat:2,repeatDelay:5,x:600,rotation: 360,ease:Bounce.easeOut,transformOrigin:"50% 50%"});
 
 	this.TimelineMax = new TimelineMax()
 				.from(this.Captus1, 1.1,{ ease:Power4.easeOut, opacity:0, y:20, ease:Expo.easeInOut})
 				.from(this.Captus2, 1.2, { ease:Power4.easeOut, scaleY: 0, transformOrigin: '50% 100%' })
 				.from(this.Captus3, 1.3, { ease:Power4.easeOut, scaleY: 0, transformOrigin: '50% 100%' })
-				.from(this.Sol, 1.4,{y:-100, ease:Elastic.easeOut.config(1.1, 0.4)})						
+				.from(this.Sol, 1.4,{y:-100, ease:Elastic.easeOut.config(1.1, 0.4)})
+				.to(this.Planta,30,{repeat:2,repeatDelay:5,x:400,rotation: 360,ease:Bounce.easeOut,transformOrigin:"50% 50%"});
+						
 	}
 	render() {
 		return (
