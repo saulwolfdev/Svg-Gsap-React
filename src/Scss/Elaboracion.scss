@@ -1,0 +1,105 @@
+
+	.Elaboracion {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    &_Sol {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+		animation: colorSol 4s ease-in-out infinite;
+		opacity: .1;
+        @keyframes colorSol {
+            0% {
+               	opacity: .2;
+				 width: 100%;
+            }
+            20% {
+               	opacity: .5;
+				   width: 99%;
+            }
+            80% {
+               	opacity: .9;
+				    width: 99%;
+            }
+
+            100% {
+               	opacity: .2;
+				   width: 100%;
+            }
+
+        }
+
+    }
+
+    &_Captus1 {
+		position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    &_Bandeja {
+		position: absolute;
+        margin: 0 auto;
+        z-index: 1;
+		width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fly 5s ease-in-out infinite;
+
+        @keyframes fly {
+            0% {
+                transform: translate(-50%, -5%);
+            }
+
+            50% {
+                transform: translate(-50%, -10%);
+            }
+
+            100% {
+                transform: translate(-50%, -5%);
+            }
+
+        }
+    }
+
+    &_Captus2 {
+               position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+	}
+    &_Captus3 {
+                position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    &_Linea {
+               position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+	&_Planta{
+		position: absolute;
+    width: 4%;
+    margin-top: 16.5%;
+//   animation: bounce 3s  infinite;
+//         @keyframes bounce {
+//         0%   { transform: translateY(0); }
+//         50%  { transform: translateY(-10px); }
+//         100% { transform: translateY(0); }
+//         }
+
+	}
+
+
+}
+
+
