@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Svg-Gsap-React/static/css/main.d5a56aaf.chunk.css",
+    "main.js": "/Svg-Gsap-React/static/js/main.051bc22f.chunk.js",
+    "main.js.map": "/Svg-Gsap-React/static/js/main.051bc22f.chunk.js.map",
+    "runtime~main.js": "/Svg-Gsap-React/static/js/runtime~main.bdacf21d.js",
+    "runtime~main.js.map": "/Svg-Gsap-React/static/js/runtime~main.bdacf21d.js.map",
+    "static/js/2.dd0911fa.chunk.js": "/Svg-Gsap-React/static/js/2.dd0911fa.chunk.js",
+    "static/js/2.dd0911fa.chunk.js.map": "/Svg-Gsap-React/static/js/2.dd0911fa.chunk.js.map",
+    "index.html": "/Svg-Gsap-React/index.html",
+    "precache-manifest.f19b5696c9f015fd51b8e0f6af1db5b0.js": "/Svg-Gsap-React/precache-manifest.f19b5696c9f015fd51b8e0f6af1db5b0.js",
+    "service-worker.js": "/Svg-Gsap-React/service-worker.js",
+    "static/css/main.d5a56aaf.chunk.css.map": "/Svg-Gsap-React/static/css/main.d5a56aaf.chunk.css.map",
+    "static/media/Bandeja.svg": "/Svg-Gsap-React/static/media/Bandeja.f2ed261d.svg",
+    "static/media/Captus1.svg": "/Svg-Gsap-React/static/media/Captus1.3c8e9e1d.svg",
+    "static/media/Captus2.svg": "/Svg-Gsap-React/static/media/Captus2.2714264e.svg",
+    "static/media/Captus3.svg": "/Svg-Gsap-React/static/media/Captus3.3498f01f.svg",
+    "static/media/Linea.svg": "/Svg-Gsap-React/static/media/Linea.352c3e5d.svg",
+    "static/media/Planta.svg": "/Svg-Gsap-React/static/media/Planta.b6b0b749.svg",
+    "static/media/Sol.svg": "/Svg-Gsap-React/static/media/Sol.ffa89cc6.svg"
+  }
+}
