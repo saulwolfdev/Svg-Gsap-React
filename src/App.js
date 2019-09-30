@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./Scss/Index.scss";
 import Elaboracion from './Animation/Elaboracion';
-function App() {
-  return (
-<div>
+import Pendiente from './Animation/Pendiente';
+class App extends Component {
+  render() { 
+    return ( 
+      <div>
 
-		<Elaboracion/>
+		{/* <Elaboracion/> */}
+    <Pendiente/>
 	  </div>
-  );
+     );
+  }
 }
-
+ 
 export default App;
-

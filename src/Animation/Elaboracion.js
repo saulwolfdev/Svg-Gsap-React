@@ -8,6 +8,14 @@ import Captus3 from "../Svg/Elaboracion/Captus3.svg";
 import Linea from "../Svg/Elaboracion/Linea.svg";
 import Planta from "../Svg/Elaboracion/Planta.svg";
 import Fondo from "../Svg/Elaboracion/Fondo.svg";
+
+// 	const svgElaboracion=[
+// 	{
+// 		src:"../Svg/Elaboracion/Fondo.svg",
+// 		alt:"Sol",
+// 		className:"Elaboracion_Sol"
+// 	}
+// ]
 class Elaboracion extends Component {
 	constructor(props) {
 		super(props);
@@ -21,10 +29,11 @@ class Elaboracion extends Component {
 		this.TimelineMax=null;
 		this.TweenMax=null;
 		this.Planta = null;
+		this.svgElaboracion = [];
+		
 	}
 	componentDidMount() {
 	TweenMax.from(this.Bandeja, 1, {delay: 0.6, ease: Expo.easeInOut});
-	// TweenMax.from(this.Planta, 30,{repeat:2,repeatDelay:5,x:600,rotation: 360,ease:Bounce.easeOut,transformOrigin:"50% 50%"});
 
 	this.TimelineMax = new TimelineMax()
 				.from(this.Captus1, 1.1,{ ease:Power4.easeOut, opacity:0, y:20, ease:Expo.easeInOut})
@@ -38,14 +47,20 @@ class Elaboracion extends Component {
 	render() {
 		return (
 			<div className="Elaboracion">
-				<img src={Sol} ref={img => this.Sol = img} className="Elaboracion_Sol" />
-				<img src={Captus1} ref={img => this.Captus1 = img} className="Elaboracion_Captus1"/>
-				<img src={Bandeja} ref={img => this.Bandeja = img} className="Elaboracion_Bandeja"/>
-				<img src={Captus2} ref={img => this.Captus2 = img} className="Elaboracion_Captus2"/>
-				<img src={Captus3} ref={img => this.Captus3 = img} className="Elaboracion_Captus3"/>
-				<img src={Linea} className="Elaboracion_Linea"/>
-				<img src={Planta} ref={img => this.Planta = img} className="Elaboracion_Planta"/>
-				<img src={Fondo} className="Elaboracion_Fondo"/>
+				<img src={Sol} ref={img => this.Sol = img} className="Elaboracion_Sol" alt="Sol"/>
+				<img src={Captus1} ref={img => this.Captus1 = img} className="Elaboracion_Captus1"alt="Captus1"/>
+				<img src={Bandeja} ref={img => this.Bandeja = img} className="Elaboracion_Bandeja"alt="Bandeja" />
+				<img src={Captus2} ref={img => this.Captus2 = img} className="Elaboracion_Captus2" alt="Captus2"/>
+				<img src={Captus3} ref={img => this.Captus3 = img} className="Elaboracion_Captus3" alt="Captus3"/>
+				<img src={Linea} className="Elaboracion_Linea" alt="Linea"/>
+				<img src={Planta} ref={img => this.Planta = img} className="Elaboracion_Planta" alt=""/>
+				<img src={Fondo} className="Elaboracion_Fondo" alt="Fondo"/>
+				{/* <div>
+				{ svgElaboracion.map( (svg, i) => {
+				const { src, alt, className} = svg;
+				return <img key={`svg-${i}`} src={src} alt={alt} className={className} ref={ svg => this.svgElaboracion[i] = svg }/>;
+			})}
+				</div> */}
 			</div>
 	
 		)
