@@ -7,6 +7,7 @@ import Captus2 from "../Svg/Elaboracion/Captus2.svg";
 import Captus3 from "../Svg/Elaboracion/Captus3.svg";
 import Linea from "../Svg/Elaboracion/Linea.svg";
 import Planta from "../Svg/Elaboracion/Planta.svg";
+import Fondo from "../Svg/Elaboracion/Fondo.svg";
 class Elaboracion extends Component {
 	constructor(props) {
 		super(props);
@@ -15,6 +16,7 @@ class Elaboracion extends Component {
 		this.Bandeja=null;
 		this.Captus2=null;
 		this.Captus3=null;
+		this.Fondo=null;
 		this.TimelineLite = null;
 		this.TimelineMax=null;
 		this.TweenMax=null;
@@ -29,7 +31,8 @@ class Elaboracion extends Component {
 				.from(this.Captus2, 1.2, { ease:Power4.easeOut, scaleY: 0, transformOrigin: '50% 100%' })
 				.from(this.Captus3, 1.3, { ease:Power4.easeOut, scaleY: 0, transformOrigin: '50% 100%' })
 				.from(this.Sol, 1.4,{y:-100, ease:Elastic.easeOut.config(1.1, 0.4)})
-				.to(this.Planta,30,{repeat:2,repeatDelay:5,x:400,rotation: 360,ease:Bounce.easeOut,transformOrigin:"50% 50%"});
+				.to(this.Planta,25,{repeat:-1,repeatDelay:5,left:"90%",rotation: 360,ease:Bounce.easeOut,transformOrigin:"50% 50%"});
+				
 						
 	}
 	render() {
@@ -42,6 +45,7 @@ class Elaboracion extends Component {
 				<img src={Captus3} ref={img => this.Captus3 = img} className="Elaboracion_Captus3"/>
 				<img src={Linea} className="Elaboracion_Linea"/>
 				<img src={Planta} ref={img => this.Planta = img} className="Elaboracion_Planta"/>
+				<img src={Fondo} className="Elaboracion_Fondo"/>
 			</div>
 	
 		)

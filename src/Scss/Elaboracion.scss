@@ -46,7 +46,7 @@
         margin: 0 auto;
         z-index: 1;
 		width: 100%;
-        top: 50%;
+        // top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         animation: fly 5s ease-in-out infinite;
@@ -88,8 +88,8 @@
     }
 	&_Planta{
 		position: absolute;
-    width: 4%;
-    margin-top: 16.5%;
+    width: 6%;
+    margin-top: 14.5%;
 //   animation: bounce 3s  infinite;
 //         @keyframes bounce {
 //         0%   { transform: translateY(0); }
@@ -97,6 +97,12 @@
 //         100% { transform: translateY(0); }
 //         }
 
+	}
+	&_Fondo{
+		width: 100%;
+		position: relative;
+		overflow-x: hidden;
+		z-index: -10;
 	}
 
 
