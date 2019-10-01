@@ -1,2 +1,2 @@
 # Svg-Gsap-React
-Animacion con svg y react-
+Animación de svg con Greensock y react.
