@@ -9,6 +9,13 @@ import Linea from "../Svg/Elaboracion/Linea.svg";
 import Planta from "../Svg/Elaboracion/Planta.svg";
 import Fondo from "../Svg/Elaboracion/Fondo.svg";
 
+// 	const svgElaboracion=[
+// 	{
+// 		src:"../Svg/Elaboracion/Fondo.svg",
+// 		alt:"Sol",
+// 		className:"Elaboracion_Sol"
+// 	}
+// ]
 class Elaboracion extends Component {
 	constructor(props) {
 		super(props);
@@ -21,6 +28,7 @@ class Elaboracion extends Component {
 		this.TimelineMax=null;
 		this.TweenMax=null;
 		this.Planta = null;
+		// this.svgElaboracion = [];
 	}
 	componentDidMount() {
 	TweenMax.from(this.Bandeja, 1, {delay: 0.6, ease: Expo.easeInOut});
@@ -44,6 +52,12 @@ class Elaboracion extends Component {
 				<img src={Linea} className="Elaboracion_Linea" alt="Linea"/>
 				<img src={Planta} ref={img => this.Planta = img} className="Elaboracion_Planta" alt=""/>
 				<img src={Fondo} className="Elaboracion_Fondo" alt="Fondo"/>
+				{/* <div>
+				{ svgElaboracion.map( (svg, i) => {
+				const { src, alt, className} = svg;
+				return <img key={`svg-${i}`} src={src} alt={alt} className={className} ref={ svg => this.svgElaboracion[i] = svg }/>;
+			})}
+				</div> */}
 			</div>
 	
 		)

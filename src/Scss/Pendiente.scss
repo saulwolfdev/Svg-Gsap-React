@@ -1,0 +1,106 @@
+.Pendiente {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: -10;
+
+    &_Linea {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &_Cruz1 {
+        position: absolute;
+        left: 16%;
+        top: 57%;
+        width: 4%;
+    }
+
+    &_Cruz2 {
+        position: absolute;
+        left: 28%;
+        top: 67%;
+        width: 3.5%;
+    }
+
+    &_Cruz3 {
+        position: absolute;
+        left: 33%;
+        top: 9%;
+        width: 5.5%;
+    }
+
+    &_Cruz4 {
+position: absolute;
+    right: 24%;
+    top: 70%;
+    width: 3.5%;
+    }
+
+    &_Estrella1 {
+        position: absolute;
+        left: 29%;
+        top: 41%;
+        width: 5.5%;
+
+    }
+
+    &_Estrella2 {
+        position: absolute;
+        left: 63%;
+        top: 0;
+        width: 13.5%;
+    }
+	
+    &_Estrella11 {
+        position: absolute;
+        left: 33%;
+        top: 0;
+        width: 13.5%;
+    }
+
+    &_Estrella3 {
+        position: absolute;
+        left: 76%;
+        top: 38%;
+        width: 7%;
+    }
+
+    &_Carpeta {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+
+    &_Bandeja {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 1;
+        width: 100%;
+        // top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fly 5s ease-in-out infinite;
+
+        @keyframes fly {
+            0% {
+                transform: translate(-50%, -5%);
+            }
+
+            50% {
+                transform: translate(-50%, -10%);
+            }
+
+            100% {
+                transform: translate(-50%, -5%);
+            }
+
+        }
+    }
+}
+
+.Fondo {
+    position: absolute;
+    left: 0;
+}
