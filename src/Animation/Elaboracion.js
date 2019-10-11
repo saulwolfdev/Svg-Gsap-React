@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TweenMax,Elastic, TimelineMax,Expo,Power4,Bounce} from "gsap/all";
+import { TweenMax,CSSPlugin,  Elastic, TimelineMax,Expo,Power4,Bounce,} from "gsap/all";
 import Sol from "../Svg/Elaboracion/Sol.svg";
 import Captus1 from "../Svg/Elaboracion/Captus1.svg";
 import Bandeja from "../Svg/Elaboracion/Bandeja.svg";
@@ -8,6 +8,7 @@ import Captus3 from "../Svg/Elaboracion/Captus3.svg";
 import Linea from "../Svg/Elaboracion/Linea.svg";
 import Planta from "../Svg/Elaboracion/Planta.svg";
 import Fondo from "../Svg/Elaboracion/Fondo.svg";
+
 
 class Elaboracion extends Component {
 	constructor(props) {
